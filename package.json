@@ -1,0 +1,24 @@
+{
+  "name": "todolist-serverless",
+  "version": "1.0.0",
+  "description": "<!-- title: 'AWS NodeJS Example' description: 'This template demonstrates how to deploy a NodeJS function running on AWS Lambda using the traditional Serverless Framework.' layout: Doc framework: v3 platform: AWS language: nodeJS priority: 1 authorLink: 'https://github.com/serverless' authorName: 'Serverless, inc.' authorAvatar: 'https://avatars1.githubusercontent.com/u/13742415?s=200&v=4' -->",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "aws-vault exec me-aws -- npx serverless deploy",
+    "start:dev": "aws-vault exec me-aws -- serverless offline --httpPort 3000 --stage local --reloadHandler"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.108",
+    "@types/node": "^18.11.9",
+    "esbuild": "^0.15.15",
+    "serverless": "^3.25.0",
+    "serverless-dotenv-plugin": "^4.0.2",
+    "serverless-esbuild": "^1.33.2",
+    "serverless-offline": "^11.5.0",
+    "serverless-prune-plugin": "^2.0.1",
+    "typescript": "^4.9.3"
+  }
+}

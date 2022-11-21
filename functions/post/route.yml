@@ -1,0 +1,7 @@
+createTodo:
+  name: ${sls:stage}-createTodo
+  handler: functions/post/handler.handler
+  events:
+    - httpApi:
+        method: POST
+        path: /todo

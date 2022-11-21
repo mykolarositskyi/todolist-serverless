@@ -1,0 +1,7 @@
+getTodo:
+  name: ${sls:stage}-getTodo
+  handler: functions/get/handler.handler
+  events:
+    - httpApi:
+        method: GET
+        path: /todo

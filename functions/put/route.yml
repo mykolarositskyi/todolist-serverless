@@ -1,0 +1,7 @@
+updateTodo:
+  name: ${sls:stage}-updateTodo
+  handler: functions/put/handler.handler
+  events:
+    - httpApi:
+        method: PUT
+        path: /todo/{id}

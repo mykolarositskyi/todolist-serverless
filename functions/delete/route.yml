@@ -1,0 +1,7 @@
+deleteTodo:
+  name: ${sls:stage}-deleteTodo
+  handler: functions/delete/handler.handler
+  events:
+    - httpApi:
+        method: DELETE
+        path: /todo/{id}
