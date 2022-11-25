@@ -8,10 +8,10 @@ provider:
   stage: ${opt:stage, 'dev'}
 
 functions:
-  - ${file(./functions/get/route.yml)}
-  - ${file(./functions/post/route.yml)}
-  - ${file(./functions/delete/route.yml)}
-  - ${file(./functions/put/route.yml)}
+  - ${file(./functions/get/event.yml)}
+  - ${file(./functions/post/event.yml)}
+  - ${file(./functions/delete/event.yml)}
+  - ${file(./functions/put/event.yml)}
 
 plugins:
   - serverless-dotenv-plugin
